@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductList from './features/product-list/ProductList';
+import ProductList from './features/product-list/components/ProductList';
 import Home from './pages/Home';
 import Login from './pages/LoginPage';
 import LoginPage from './pages/LoginPage';
@@ -14,6 +14,7 @@ import {
 import Cart from './features/cart/Cart';
 import CartPage from './pages/CartPage';
 import Checkout from './pages/Checkout';
+import ProductDetailsPage from './pages/ProductDetailsPage';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/checkout",
     element: <Checkout></Checkout>
+  },
+  {
+    path: "/product-detail",
+    element: <ProductDetailsPage></ProductDetailsPage>
   },
 ]);
 
